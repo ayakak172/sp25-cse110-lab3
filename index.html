@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Meeting Notes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" size="16x16" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Agenda">Agenda</a></li>
+                <li><a href="#Goals">Goals</a></li>
+                <li><a href="#Notes">Notes</a></li>
+                <li><a href="#Form">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+    <main>
+        <h1>Meeting Notes</h1>
+        <section id="Agenda">
+            <h2>Agenda</h2>
+            <ol><strong>
+                <li>Take attendance</li>
+                <li>List goals for this meeting</li>
+                <li>Brainstorm ideas</li>
+            </strong></ol>    
+        </section>
+        <hr />
+        <section id="Goals">
+            <h2>Goals</h2>
+            <p><em>
+                <b>Communicate</b> research and <b>brainstorm</b> ideas
+            </em></p>
+        </section>
+        <hr />
+        <section id="Notes">
+            <h2>Notes</h2>
+            <p>
+                The following are <span class="vocab">diagrams</span> that were used during the meeting:
+            </p>
+            <h3>Images</h3>
+            <div class="image">
+                <img 
+                    src="diagram example.jpg"
+                    alt="example of diagram"/>
+                <p><i>An example of a <span class="vocab">flowchart</span> taken from the internet</i></p>
+            </div>
+            <br />
+            <h3>Meeting Audio</h3>
+            <audio controls src="30 Second Timer With Jeopardy Thinking Music.m4a" type="audio/m4a"></audio>
+            <h3>Meeting Video</h3>
+            <video>
+                <source src="30 Second Timer With Jeopardy Thinking Music.mp4" type="video/mp4" />
+            </video>
+            <p>Credits to: <a href="https://www.youtube.com/watch?v=73tGe3JE5IU">Youtube Video</a></p>
+        </section>
+
+        <hr />
+        <section id="Form">
+            <h1>Feedback Form</h1>
+            <form>
+                <fieldset><ol>
+                    <li>
+                        <label for="name">Enter name: </label>
+                        <input type="text" name="name" id="name" required />
+                    </li>
+                    <li>
+                        <label>Enter the date: </label>
+                        <input type="date" />
+                    </li>
+                    <li>
+                        <p>Did you attend the meeting?</p>
+                        <p><input type="radio" />Yes</p>
+                        <p><input type="radio" />No</p>
+                    </li>
+                    <li>
+                        <p>Check the items that were accomplished in this meeting</p>
+                        <p><input type="checkbox" />Took Attendance</p>
+                        <p><input type="checkbox" />Listed Goals</p>
+                        <p><input type="checkbox" />Brainstormed Ideas</p>
+                    </li>
+                    <li>
+                        <label>Were you satisfied with the meeting progress?</label>
+                        <input list="rating" />
+                        <datalist id="rating">
+                            <option value="Great"></option>
+                            <option value="Satisfactory"></option>
+                            <option value="Unsatisfactory"></option>
+                        </datalist>
+                    </li>
+                    <li>
+                        <label>Are you able to go to the next meeting?</label>
+                        <select id="nextMeeting">
+                            <option value="--">Please choose one</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                            <option value="Maybe">I'm not sure yet</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Any comments/suggestions?</label>
+                        <br />
+                        <textarea rows="2" cols="15">Input here</textarea>
+                    </li>
+                    <button>Submit form</button>
+                </ol></fieldset>               
+            </form>
+        </section>
+        <footer>
+            <details>
+                <summary>Meeting Summary</summary>
+                <p>
+                    In this meeting, we communicated research and brainstormed ideas. 
+                    Everyone attended and contributed to the meeting. 
+                    The audio and video of the meeting are attached.
+                </p>
+            </details>
+        </footer>
+    </main>
+  </body>
+</html>
