@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://ayakak172.github.io/Lab2_Starter/
+# Lab 3
+https://ayakak172.github.io/sp25-cse110-lab3/

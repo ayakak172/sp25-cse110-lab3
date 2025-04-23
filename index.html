@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Meeting Notes</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            background-color: #e8f6fa;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <header>
@@ -19,7 +28,7 @@
     </header>
     <hr />
     <main>
-        <h1>Meeting Notes</h1>
+        <h1 style="color: rgb(28,103,128)">Meeting Notes</h1>
         <section id="Agenda">
             <h2>Agenda</h2>
             <ol>
@@ -60,29 +69,29 @@
 
         <hr />
         <section id="Form">
-            <h1>Feedback Form</h1>
+            <h1 style="color: slateblue">Feedback Form</h1>
             <form>
-                <fieldset><ol>
-                    <li>
+                <fieldset>
+                    <ol>
                         <label for="name">Enter name: </label>
                         <input type="text" name="name" id="name" required />
-                    </li>
-                    <li>
+                    </ol>
+                    <ol>
                         <label>Enter the date: </label>
                         <input type="date" />
-                    </li>
-                    <li>
+                    </ol>
+                    <ol>
                         <p>Did you attend the meeting?</p>
                         <p><input type="radio" />Yes</p>
                         <p><input type="radio" />No</p>
-                    </li>
-                    <li>
-                        <p>Check the items that were accomplished in this meeting</p>
+                    </ol>
+                    <ol>
+                        <p>Check the items that were accomplished in this meeting:</p>
                         <p><input type="checkbox" />Took Attendance</p>
                         <p><input type="checkbox" />Listed Goals</p>
                         <p><input type="checkbox" />Brainstormed Ideas</p>
-                    </li>
-                    <li>
+                    </ol>
+                    <ol>
                         <label>Were you satisfied with the meeting progress?</label>
                         <input list="rating" />
                         <datalist id="rating">
@@ -90,8 +99,8 @@
                             <option value="Satisfactory"></option>
                             <option value="Unsatisfactory"></option>
                         </datalist>
-                    </li>
-                    <li>
+                    </ol>
+                    <ol>
                         <label>Are you able to go to the next meeting?</label>
                         <select id="nextMeeting">
                             <option value="--">Please choose one</option>
@@ -99,13 +108,12 @@
                             <option value="No">No</option>
                             <option value="Maybe">I'm not sure yet</option>
                         </select>
-                    </li>
-                    <li>
+                    </ol>
+                    <ol>
                         <label>Any comments/suggestions?</label>
                         <br />
                         <textarea rows="2" cols="15">Input here</textarea>
-                    </li>
-                </ol>
+                    </ol>
                 <button>Submit form</button>
                 </fieldset>               
             </form>
