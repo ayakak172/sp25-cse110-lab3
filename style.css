@@ -19,7 +19,7 @@ a:active {
 /* Set header position, size, border, and display method */
 header {
     position: static;
-    border: 3px solid color(srgb 0.27451 0.415686 0.55098);
+    border: 3px solid #466a8c;
     width: 25vw;
     max-width: 200px;
     min-width: 150px;
@@ -58,9 +58,9 @@ h2, h3, p, footer {
 
 /* Change color of everything else and adjust overall margins and padding */
 li, ol, button, input, datalist, select, textarea {
-    color: color-mix(in srgb, #25347A  , #67A09F  );
-    padding: 15px, 15px, 15px, 15px;
-    margin: 15px, 15px, 15px, 15px;
+    color: color-mix(in srgb, #25347A, #67A09F);
+    padding: 15px;
+    margin: 15px;
 }
 
 /* Highlight vocab */
@@ -75,7 +75,7 @@ input[type="checkbox"]:checked {
 
 /* Make sure the radio buttons have proper padding */
 p:has(> input[type="radio"]) {
-    padding-top: 10x;
+    padding-top: 10px;
 }
 
 /* Change size of button when hovered */
@@ -94,7 +94,7 @@ button:hover {
 /* Adjust border, padding, and margins of form */
 form ol {
     border-style: solid;
-    border-color: color(srgb 0.27451 0.415686 0.55098);
+    border-color: #466a8c;
     border-width: 3px;
     border-radius: 10px;
     padding-top: 10px;
