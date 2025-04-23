@@ -1,0 +1,142 @@
+/* Change font everywhere */
+* { 
+    --text-color: color(srgb 0.27451 0.415686 0.55098);
+    font-family: "Winky Rough", sans-serif;
+}
+
+/* Adjust screen width based on screen size */
+@media screen {
+    * {
+        max-width: 80vw;
+    }
+}
+
+/* Change link color */
+a:active {
+    color: purple;
+}
+
+/* Set header position, size, border, and display method */
+header {
+    position: static;
+    border: 3px solid color(srgb 0.27451 0.415686 0.55098);
+    width: 25vw;
+    max-width: 200px;
+    min-width: 150px;
+    height: 110px;
+    border-radius: 15px;
+    margin: 15px;
+    display: inline-block;
+}
+
+/* Adjust margins of each line of header */
+header li {
+    margin: auto;
+
+}
+
+/* Make all headings underlined and aligned to the left */
+h1, h2, h3 {
+    text-decoration: underline;
+    text-align: left;
+}
+
+/* Change font size of heading 2 to be smaller than heading 1 */
+h2 {
+    font-size: 1.5em;
+}
+
+/* Change font size of heading 3 to be smaller than heading 2 */
+h3 {
+    font-size: 1.2em;
+}
+
+/* Change color of all headings, paragraphs, and footer */
+h2, h3, p, footer {
+    color: var(--text-color, hsl(194, 53%, 40%));
+}
+
+/* Change color of everything else and adjust overall margins and padding */
+li, ol, button, input, datalist, select, textarea {
+    color: color-mix(in srgb, #25347A  , #67A09F  );
+    padding: 15px, 15px, 15px, 15px;
+    margin: 15px, 15px, 15px, 15px;
+}
+
+/* Highlight vocab */
+span.vocab {
+    background-color: rgb(146, 224, 146);
+}
+
+/* Change the color of check boxes */
+input[type="checkbox"]:checked {
+    accent-color: rgb(146, 224, 146);
+}
+
+/* Make sure the radio buttons have proper padding */
+p:has(> input[type="radio"]) {
+    padding-top: 10x;
+}
+
+/* Change size of button when hovered */
+button:hover {
+    width: 8em;
+    height: 3em;
+    border-radius: 5px;
+}
+
+/* Adjust width of form and change display settings */
+#Form {
+    width: 50vw;
+    display: block;
+}
+
+/* Adjust border, padding, and margins of form */
+form ol {
+    border-style: solid;
+    border-color: color(srgb 0.27451 0.415686 0.55098);
+    border-width: 3px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Adjust the display of inputs in form */
+form > input {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: start;
+}
+
+/* Adjust the margin between labels and inputs */
+label + input {
+    margin: 10px;
+}
+
+/* Adjust the margins between labels and select */
+label ~ select {
+    margin: 10px;
+}
+
+/* Adjust image class width and display settings */
+.image {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+/* Adjust footer position */
+footer {
+    margin-top: 15px;
+    position: relative;
+    bottom: 10px;
+}
