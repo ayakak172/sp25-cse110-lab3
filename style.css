@@ -58,7 +58,7 @@ h2, h3, p, footer {
 
 /* Change color of everything else and adjust overall margins and padding */
 li, ol, button, input, datalist, select, textarea {
-    color: color-mix(in srgb, #25347A 50%, #67A09F 50%);
+    color: var(--text-color, color-mix(in srgb, #25347A 50%, #67A09F 50%));
     padding: 15px;
     margin: 15px;
 }
